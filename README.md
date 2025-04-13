@@ -16,7 +16,7 @@
 
 ### 📈 Stats
 
-- 🔢 680+ Problems Solved on [LeetCode](https://leetcode.com/bhavneet12)
+- 🔢 680+ Problems Solved on LeetCode
 - 📚 2 IEEE Publications in ML + IoT Security
 - 🛠 Constantly building & learning — new projects coming soon!
 ---
