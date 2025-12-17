@@ -1,1 +1,9 @@
+### Bhavneet Kaur
 
+Software Engineer with experience across backend systems, full-stack development, and applied machine learning.
+
+Currently seeking full-time Software Engineer opportunities in the United States.
+
+![Most Used Languages](./languages.svg)
+
+Reach me on [LinkedIn](https://www.linkedin.com/in/bhavneetkaur12/)
