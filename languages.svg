@@ -1,0 +1,8 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="210">
+<style>
+text { font: 13px monospace; fill: #333 }
+</style>
+<text x="20" y="18">Languages (public + private)</text>
+<text x="20" y="30">JavaScript 85.4%</text><text x="20" y="48">HTML 5.4%</text><text x="20" y="66">TypeScript 3.7%</text><text x="20" y="84">CSS 1.6%</text><text x="20" y="102">Handlebars 1.1%</text><text x="20" y="120">Python 0.7%</text><text x="20" y="138">Jupyter Notebook 0.7%</text><text x="20" y="156">SCSS 0.7%</text><text x="20" y="174">EJS 0.4%</text><text x="20" y="192">RouterOS Script 0.3%</text>
+</svg>
