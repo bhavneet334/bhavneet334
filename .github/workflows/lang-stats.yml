@@ -7,9 +7,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: List repos (public + private)
+      - name: Check token access
         run: |
-          curl -H "Authorization: Bearer $GH_TOKEN" \
-               https://api.github.com/user/repos?visibility=all&per_page=5
+          curl -H "Authorization: Bearer $GH_TOKEN" https://api.github.com/user
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
