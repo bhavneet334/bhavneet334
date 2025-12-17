@@ -1,14 +1,28 @@
-name: Language Stats Test
+name: Language SVG
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 1"
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check token access
-        run: |
-          curl -H "Authorization: Bearer $GH_TOKEN" https://api.github.com/user
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - run: npm install node-fetch
+      - run: node scripts/lang-svg.js
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add languages.svg
+          git commit -m "Update language stats" || true
+          git push
